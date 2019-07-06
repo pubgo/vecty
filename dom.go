@@ -929,9 +929,12 @@ func copyComponent(c Component) Component {
 	if v.Kind() != reflect.Ptr || v.Elem().Kind() != reflect.Struct {
 		panic("vecty: Component must be pointer to struct, found " + reflect.TypeOf(c).String())
 	}
+	panic("TinyGo doesn't support reflect.New yet, so components must implement the Copier interface.")
+	/*
 	cpy := reflect.New(v.Elem().Type())
 	cpy.Elem().Set(v.Elem())
 	return cpy.Interface().(Component)
+	*/
 }
 
 // copyProps copies all struct fields from src to dst that are tagged with
@@ -952,6 +955,9 @@ func copyProps(src, dst Component) {
 	}
 	for i := 0; i < s.Elem().NumField(); i++ {
 		sf := s.Elem().Field(i)
+		// TODO: TinyGo does not support the reflection methods needed to perform prop copying
+		_ = sf
+		/*
 		if s.Elem().Type().Field(i).Tag.Get("vecty") == "prop" {
 			df := d.Elem().Field(i)
 			if sf.Type() != df.Type() {
@@ -959,6 +965,7 @@ func copyProps(src, dst Component) {
 			}
 			df.Set(sf)
 		}
+		*/
 	}
 }
 
