@@ -18,6 +18,15 @@ type FilterButton struct {
 
 	Label  string            `vecty:"prop"`
 	Filter model.FilterState `vecty:"prop"`
+	IsShow bool
+}
+
+func (b *FilterButton) Mount() {
+	vecty.Rerender(b)
+}
+
+func (b *FilterButton) SkipRender(prev vecty.Component) bool {
+	return b.IsShow
 }
 
 func (b *FilterButton) onClick(event *vecty.Event) {
