@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/gopherjs/vecty"
-	"github.com/gopherjs/vecty/elem"
+	"github.com/pubgo/vecty/vecty"
+	"github.com/pubgo/vecty/vecty/elem"
 )
 
 func main() {

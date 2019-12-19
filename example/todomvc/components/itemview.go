@@ -1,14 +1,12 @@
 package components
 
 import (
-	"github.com/gopherjs/vecty"
-	"github.com/gopherjs/vecty/elem"
-	"github.com/gopherjs/vecty/event"
-	"github.com/gopherjs/vecty/example/todomvc/actions"
-	"github.com/gopherjs/vecty/example/todomvc/dispatcher"
-	"github.com/gopherjs/vecty/example/todomvc/store/model"
-	"github.com/gopherjs/vecty/prop"
-	"github.com/gopherjs/vecty/style"
+	"github.com/pubgo/vecty/example/todomvc/actions"
+	"github.com/pubgo/vecty/example/todomvc/dispatcher"
+	"github.com/pubgo/vecty/example/todomvc/store/model"
+	"github.com/pubgo/vecty/vecty"
+	"github.com/pubgo/vecty/vecty/elem"
+	"github.com/pubgo/vecty/vecty/event"
 )
 
 // ItemView is a vecty.Component which represents a single item in the TODO

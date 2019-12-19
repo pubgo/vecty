@@ -2,9 +2,9 @@ package main
 
 import (
 	"encoding/json"
+	"github.com/pubgo/vecty/vecty"
 	"syscall/js"
 
-	"github.com/gopherjs/vecty"
 	"github.com/gopherjs/vecty/example/todomvc/actions"
 	"github.com/gopherjs/vecty/example/todomvc/components"
 	"github.com/gopherjs/vecty/example/todomvc/dispatcher"

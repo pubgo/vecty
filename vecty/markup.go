@@ -8,7 +8,7 @@ import (
 // the named DOM event is fired.
 type EventListener struct {
 	Name                string
-	Listener            func(*Event)
+	Listener            func(Event)
 	callPreventDefault  bool
 	callStopPropagation bool
 	wrapper             jsFunc

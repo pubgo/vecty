@@ -231,10 +231,7 @@ func (h *HTML) reconcileProperties(prev *HTML) {
 			if l.callStopPropagation {
 				jsEvent.Call("stopPropagation")
 			}
-			l.Listener(&Event{
-				Value:  jsEvent.(wrappedObject).j,
-				Target: jsEvent.Get("target").(wrappedObject).j,
-			})
+			l.Listener(wrapEvent(jsEvent))
 			return undefined
 		})
 	}
@@ -1268,22 +1265,6 @@ func AddStylesheet(url string) {
 	global.Get("document").Get("head").Call("appendChild", link)
 }
 
-type jsFunc interface {
-	Release()
-}
-
-type jsObject interface {
-	Set(key string, value interface{})
-	Get(key string) jsObject
-	Delete(key string)
-	Call(name string, args ...interface{}) jsObject
-	String() string
-	Truthy() bool
-	Bool() bool
-	Int() int
-	Float() float64
-}
-
 var isTest bool
 
 func init() {
@@ -1293,7 +1274,7 @@ func init() {
 	if global == nil {
 		panic("vecty: only GopherJS and WebAssembly compilation is supported")
 	}
-	if global.Get("document") == undefined {
+	if document == nil {
 		panic("vecty: only running inside a browser is supported")
 	}
 }
