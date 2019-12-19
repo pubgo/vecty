@@ -7,7 +7,9 @@
 // CC-BY-SA 2.5.
 package elem
 
-import "github.com/gopherjs/vecty"
+import (
+	"github.com/pubgo/vecty/vecty"
+)
 
 // Anchor (or anchor element) creates a hyperlink to other web pages, files,
 // locations within the same page, email addresses, or any other URL.

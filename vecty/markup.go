@@ -1,6 +1,8 @@
 package vecty
 
-import "reflect"
+import (
+	"reflect"
+)
 
 // EventListener is markup that specifies a callback function to be invoked when
 // the named DOM event is fired.
@@ -156,7 +158,7 @@ func Class(class ...string) Applyer {
 func mustValidateClassNames(class []string) {
 	for _, name := range class {
 		if containsSpace(name) {
-			panic(`vecty: invalid argument to vecty.Class "` + name + `" (string may not contain spaces)`)
+			panic(`vecty: invalid argument to Class "` + name + `" (string may not contain spaces)`)
 		}
 	}
 }
@@ -247,7 +249,7 @@ func MarkupIf(cond bool, markup ...Applyer) Applyer {
 // user, for example, it would create a cross-site-scripting (XSS) exploit in
 // the application.
 //
-// The returned Applyer can only be applied to HTML, not vecty.Text, or else a
+// The returned Applyer can only be applied to HTML, not Text, or else a
 // panic will occur.
 func UnsafeHTML(html string) Applyer {
 	return markupFunc(func(h *HTML) {
