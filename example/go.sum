@@ -1,5 +1,16 @@
+github.com/gopherjs/gopherjs v0.0.0-20181103185306-d547d1d9531e h1:JKmoR8x90Iww1ks85zJ1lfDGgIiMDuIptTOhJq+zKyg=
+github.com/gopherjs/gopherjs v0.0.0-20181103185306-d547d1d9531e/go.mod h1:wJfORRmW1u3UXTncJ5qlYoELFm8eSnnEO6hX4iZ3EWY=
+github.com/gopherjs/vecty v0.0.0-20190121070609-2a1e317a95ae h1:fZJX29/V2tv944EQi0uMH1TOyfZHSJaT/eYpLtYGDM8=
+github.com/gopherjs/vecty v0.0.0-20190121070609-2a1e317a95ae/go.mod h1:cCfq26X9MMEw/ZgZRpDDNSWfC7CO/u2ba/nGpjEVM/o=
+github.com/gopherjs/vecty v0.0.0-20191201071242-14367e2384f2 h1:D2Ab9TmBPxaXZt7qdyVOhu9uZ9CJP/YjSZ7EF3QzhMU=
+github.com/gopherjs/vecty/example v0.0.0-20191201071242-14367e2384f2 h1:ANyoOlHxwreBFe89sVFihQVOAVgCIf4wUXj+EA7W7hM=
+github.com/gopherjs/vecty/example v0.0.0-20191201071242-14367e2384f2/go.mod h1:Q+pviq0v9oAECJMu9Ti/nfy2UlaZ90hTlbo2EzOH/I4=
 github.com/microcosm-cc/bluemonday v1.0.2 h1:5lPfLTTAvAbtS0VqT+94yOtFnGfUWYyx0+iToC3Os3s=
 github.com/microcosm-cc/bluemonday v1.0.2/go.mod h1:iVP4YcDBq+n/5fb23BhYFvIMq/leAFZyRl6bYmGDlGc=
+github.com/pubgo/godom v0.0.4 h1:q7Re1hcFAly79yR0As/F57jFKWg6O90IkCf1FRFzKe0=
+github.com/pubgo/godom v0.0.4/go.mod h1:PEptMNLx/zklT6/kTVtpf01JTlVvPQzkJdYlfe+aCnI=
+github.com/pubgo/vecty v0.0.0-20191219183851-cafd70738c00 h1:/sL8GIiJIRCGXRa+gk2EGQQfl8IHoTQqioHnGWjmiVU=
+github.com/pubgo/vecty v0.0.0-20191219183851-cafd70738c00/go.mod h1:G1xtplIAQ+AhW9evOz/YEk6Qq1uoVnxTI3T7r/1Wpz8=
 github.com/shurcooL/sanitized_anchor_name v1.0.0 h1:PdmoCO6wvbs+7yrJyMORt4/BmY5IYyJwS/kOiWx8mHo=
 github.com/shurcooL/sanitized_anchor_name v1.0.0/go.mod h1:1NzhyTcUVG4SuEtjjoZeVRXNmyL/1OwPU0+IJeTBvfc=
 github.com/slimsag/blackfriday v2.0.0+incompatible h1:3mjnT4p/+Ow8j8/T6H01S5pxXNPhVuOBzxmAbsszxi4=

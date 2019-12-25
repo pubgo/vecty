@@ -1,3 +1,5 @@
+// +build js,wasm
+
 package vecty
 
 import "github.com/pubgo/godom"
