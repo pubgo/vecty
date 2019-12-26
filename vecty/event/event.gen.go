@@ -14,7 +14,7 @@ import (
 // Abort is an event fired when a transaction has been aborted.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/abort_indexedDB
-func Abort(listener func(*vecty.Event)) *vecty.EventListener {
+func Abort(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "abort", Listener: listener}
 }
 
@@ -22,28 +22,28 @@ func Abort(listener func(*vecty.Event)) *vecty.EventListener {
 // printing or the print preview has been closed.
 //
 // https://developer.mozilla.org/docs/Web/Events/afterprint
-func AfterPrint(listener func(*vecty.Event)) *vecty.EventListener {
+func AfterPrint(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "afterprint", Listener: listener}
 }
 
 // AnimationEnd is an event fired when a CSS animation has completed.
 //
 // https://developer.mozilla.org/docs/Web/Events/animationend
-func AnimationEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func AnimationEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "animationend", Listener: listener}
 }
 
 // AnimationIteration is an event fired when a CSS animation is repeated.
 //
 // https://developer.mozilla.org/docs/Web/Events/animationiteration
-func AnimationIteration(listener func(*vecty.Event)) *vecty.EventListener {
+func AnimationIteration(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "animationiteration", Listener: listener}
 }
 
 // AnimationStart is an event fired when a CSS animation has started.
 //
 // https://developer.mozilla.org/docs/Web/Events/animationstart
-func AnimationStart(listener func(*vecty.Event)) *vecty.EventListener {
+func AnimationStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "animationstart", Listener: listener}
 }
 
@@ -51,7 +51,7 @@ func AnimationStart(listener func(*vecty.Event)) *vecty.EventListener {
 // successfully installed as a progressive web app.
 //
 // https://developer.mozilla.org/docs/Web/Events/appinstalled
-func ApplicationInstalled(listener func(*vecty.Event)) *vecty.EventListener {
+func ApplicationInstalled(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "appinstalled", Listener: listener}
 }
 
@@ -59,7 +59,7 @@ func ApplicationInstalled(listener func(*vecty.Event)) *vecty.EventListener {
 // for speech recognition.
 //
 // https://developer.mozilla.org/docs/Web/Events/audioend
-func AudioEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func AudioEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "audioend", Listener: listener}
 }
 
@@ -67,7 +67,7 @@ func AudioEnd(listener func(*vecty.Event)) *vecty.EventListener {
 // audio for speech recognition.
 //
 // https://developer.mozilla.org/docs/Web/Events/audiostart
-func AudioStart(listener func(*vecty.Event)) *vecty.EventListener {
+func AudioStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "audiostart", Listener: listener}
 }
 
@@ -75,7 +75,7 @@ func AudioStart(listener func(*vecty.Event)) *vecty.EventListener {
 // printed or previewed for printing.
 //
 // https://developer.mozilla.org/docs/Web/Events/beforeprint
-func BeforePrint(listener func(*vecty.Event)) *vecty.EventListener {
+func BeforePrint(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "beforeprint", Listener: listener}
 }
 
@@ -83,14 +83,14 @@ func BeforePrint(listener func(*vecty.Event)) *vecty.EventListener {
 // resources are about to be unloaded.
 //
 // https://developer.mozilla.org/docs/Web/Events/beforeunload
-func BeforeUnload(listener func(*vecty.Event)) *vecty.EventListener {
+func BeforeUnload(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "beforeunload", Listener: listener}
 }
 
 // BeginEvent is an event fired when a SMIL animation element begins.
 //
 // https://developer.mozilla.org/docs/Web/Events/beginEvent
-func BeginEvent(listener func(*vecty.Event)) *vecty.EventListener {
+func BeginEvent(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "beginEvent", Listener: listener}
 }
 
@@ -98,14 +98,14 @@ func BeginEvent(listener func(*vecty.Event)) *vecty.EventListener {
 // a versionchange transaction on the same database.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/blocked_indexedDB
-func Blocked(listener func(*vecty.Event)) *vecty.EventListener {
+func Blocked(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "blocked", Listener: listener}
 }
 
 // Blur is an event fired when an element has lost focus (does not bubble).
 //
 // https://developer.mozilla.org/docs/Web/Events/blur
-func Blur(listener func(*vecty.Event)) *vecty.EventListener {
+func Blur(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "blur", Listener: listener}
 }
 
@@ -113,7 +113,7 @@ func Blur(listener func(*vecty.Event)) *vecty.EventListener {
 // sentence boundary
 //
 // https://developer.mozilla.org/docs/Web/Events/boundary
-func Boundary(listener func(*vecty.Event)) *vecty.EventListener {
+func Boundary(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "boundary", Listener: listener}
 }
 
@@ -121,7 +121,7 @@ func Boundary(listener func(*vecty.Event)) *vecty.EventListener {
 // downloaded, and the application is now cached.
 //
 // https://developer.mozilla.org/docs/Web/Events/cached
-func Cached(listener func(*vecty.Event)) *vecty.EventListener {
+func Cached(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "cached", Listener: listener}
 }
 
@@ -130,7 +130,7 @@ func Cached(listener func(*vecty.Event)) *vecty.EventListener {
 // end without having to stop for further buffering of content.
 //
 // https://developer.mozilla.org/docs/Web/Events/canplay
-func CanPlay(listener func(*vecty.Event)) *vecty.EventListener {
+func CanPlay(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "canplay", Listener: listener}
 }
 
@@ -138,7 +138,7 @@ func CanPlay(listener func(*vecty.Event)) *vecty.EventListener {
 // to its end without having to stop for further buffering of content.
 //
 // https://developer.mozilla.org/docs/Web/Events/canplaythrough
-func CanPlayThrough(listener func(*vecty.Event)) *vecty.EventListener {
+func CanPlayThrough(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "canplaythrough", Listener: listener}
 }
 
@@ -147,14 +147,14 @@ func CanPlayThrough(listener func(*vecty.Event)) *vecty.EventListener {
 // committed by the user.
 //
 // https://developer.mozilla.org/docs/Web/Events/change
-func Change(listener func(*vecty.Event)) *vecty.EventListener {
+func Change(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "change", Listener: listener}
 }
 
 // ChargingChange is an event fired when the battery begins or stops charging.
 //
 // https://developer.mozilla.org/docs/Web/Events/chargingchange
-func ChargingChange(listener func(*vecty.Event)) *vecty.EventListener {
+func ChargingChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "chargingchange", Listener: listener}
 }
 
@@ -162,7 +162,7 @@ func ChargingChange(listener func(*vecty.Event)) *vecty.EventListener {
 // been updated.
 //
 // https://developer.mozilla.org/docs/Web/Events/chargingtimechange
-func ChargingTimeChange(listener func(*vecty.Event)) *vecty.EventListener {
+func ChargingTimeChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "chargingtimechange", Listener: listener}
 }
 
@@ -170,7 +170,7 @@ func ChargingTimeChange(listener func(*vecty.Event)) *vecty.EventListener {
 // attempting to download the cache manifest for the first time.
 //
 // https://developer.mozilla.org/docs/Web/Events/checking
-func Checking(listener func(*vecty.Event)) *vecty.EventListener {
+func Checking(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "checking", Listener: listener}
 }
 
@@ -178,21 +178,21 @@ func Checking(listener func(*vecty.Event)) *vecty.EventListener {
 // released on an element.
 //
 // https://developer.mozilla.org/docs/Web/Events/click
-func Click(listener func(*vecty.Event)) *vecty.EventListener {
+func Click(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "click", Listener: listener}
 }
 
 // Close is an event fired when a WebSocket connection has been closed.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/close_websocket
-func Close(listener func(*vecty.Event)) *vecty.EventListener {
+func Close(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "close", Listener: listener}
 }
 
 // Complete is an event fired when a transaction successfully completed.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/complete_indexedDB
-func Complete(listener func(*vecty.Event)) *vecty.EventListener {
+func Complete(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "complete", Listener: listener}
 }
 
@@ -200,7 +200,7 @@ func Complete(listener func(*vecty.Event)) *vecty.EventListener {
 // has been completed or canceled.
 //
 // https://developer.mozilla.org/docs/Web/Events/compositionend
-func CompositionEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func CompositionEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "compositionend", Listener: listener}
 }
 
@@ -209,7 +209,7 @@ func CompositionEnd(listener func(*vecty.Event)) *vecty.EventListener {
 // inputs such as speech recognition).
 //
 // https://developer.mozilla.org/docs/Web/Events/compositionstart
-func CompositionStart(listener func(*vecty.Event)) *vecty.EventListener {
+func CompositionStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "compositionstart", Listener: listener}
 }
 
@@ -217,7 +217,7 @@ func CompositionStart(listener func(*vecty.Event)) *vecty.EventListener {
 // of text being composed.
 //
 // https://developer.mozilla.org/docs/Web/Events/compositionupdate
-func CompositionUpdate(listener func(*vecty.Event)) *vecty.EventListener {
+func CompositionUpdate(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "compositionupdate", Listener: listener}
 }
 
@@ -225,7 +225,7 @@ func CompositionUpdate(listener func(*vecty.Event)) *vecty.EventListener {
 // (before the context menu is displayed).
 //
 // https://developer.mozilla.org/docs/Web/Events/contextmenu
-func ContextMenu(listener func(*vecty.Event)) *vecty.EventListener {
+func ContextMenu(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "contextmenu", Listener: listener}
 }
 
@@ -233,7 +233,7 @@ func ContextMenu(listener func(*vecty.Event)) *vecty.EventListener {
 // clipboard.
 //
 // https://developer.mozilla.org/docs/Web/Events/copy
-func Copy(listener func(*vecty.Event)) *vecty.EventListener {
+func Copy(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "copy", Listener: listener}
 }
 
@@ -241,7 +241,7 @@ func Copy(listener func(*vecty.Event)) *vecty.EventListener {
 // document and added to the clipboard.
 //
 // https://developer.mozilla.org/docs/Web/Events/cut
-func Cut(listener func(*vecty.Event)) *vecty.EventListener {
+func Cut(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "cut", Listener: listener}
 }
 
@@ -249,7 +249,7 @@ func Cut(listener func(*vecty.Event)) *vecty.EventListener {
 // (but not its dependent resources).
 //
 // https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded
-func DOMContentLoaded(listener func(*vecty.Event)) *vecty.EventListener {
+func DOMContentLoaded(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "DOMContentLoaded", Listener: listener}
 }
 
@@ -257,7 +257,7 @@ func DOMContentLoaded(listener func(*vecty.Event)) *vecty.EventListener {
 // microphone, or speaker is connected or removed from the system.
 //
 // https://developer.mozilla.org/docs/Web/Events/devicechange
-func DeviceChange(listener func(*vecty.Event)) *vecty.EventListener {
+func DeviceChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "devicechange", Listener: listener}
 }
 
@@ -265,7 +265,7 @@ func DeviceChange(listener func(*vecty.Event)) *vecty.EventListener {
 // sensor.
 //
 // https://developer.mozilla.org/docs/Web/Events/devicelight
-func DeviceLight(listener func(*vecty.Event)) *vecty.EventListener {
+func DeviceLight(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "devicelight", Listener: listener}
 }
 
@@ -273,7 +273,7 @@ func DeviceLight(listener func(*vecty.Event)) *vecty.EventListener {
 // sensor.
 //
 // https://developer.mozilla.org/docs/Web/Events/devicemotion
-func DeviceMotion(listener func(*vecty.Event)) *vecty.EventListener {
+func DeviceMotion(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "devicemotion", Listener: listener}
 }
 
@@ -281,7 +281,7 @@ func DeviceMotion(listener func(*vecty.Event)) *vecty.EventListener {
 // orientation sensor.
 //
 // https://developer.mozilla.org/docs/Web/Events/deviceorientation
-func DeviceOrientation(listener func(*vecty.Event)) *vecty.EventListener {
+func DeviceOrientation(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "deviceorientation", Listener: listener}
 }
 
@@ -290,7 +290,7 @@ func DeviceOrientation(listener func(*vecty.Event)) *vecty.EventListener {
 // a nearby object).
 //
 // https://developer.mozilla.org/docs/Web/Events/deviceproximity
-func DeviceProximity(listener func(*vecty.Event)) *vecty.EventListener {
+func DeviceProximity(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "deviceproximity", Listener: listener}
 }
 
@@ -298,7 +298,7 @@ func DeviceProximity(listener func(*vecty.Event)) *vecty.EventListener {
 // has been updated.
 //
 // https://developer.mozilla.org/docs/Web/Events/dischargingtimechange
-func DischargingTimeChange(listener func(*vecty.Event)) *vecty.EventListener {
+func DischargingTimeChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "dischargingtimechange", Listener: listener}
 }
 
@@ -306,7 +306,7 @@ func DischargingTimeChange(listener func(*vecty.Event)) *vecty.EventListener {
 // on an element.
 //
 // https://developer.mozilla.org/docs/Web/Events/dblclick
-func DoubleClick(listener func(*vecty.Event)) *vecty.EventListener {
+func DoubleClick(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "dblclick", Listener: listener}
 }
 
@@ -315,7 +315,7 @@ func DoubleClick(listener func(*vecty.Event)) *vecty.EventListener {
 // for the first time.
 //
 // https://developer.mozilla.org/docs/Web/Events/downloading
-func Downloading(listener func(*vecty.Event)) *vecty.EventListener {
+func Downloading(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "downloading", Listener: listener}
 }
 
@@ -323,7 +323,7 @@ func Downloading(listener func(*vecty.Event)) *vecty.EventListener {
 // (every 350ms).
 //
 // https://developer.mozilla.org/docs/Web/Events/drag
-func Drag(listener func(*vecty.Event)) *vecty.EventListener {
+func Drag(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "drag", Listener: listener}
 }
 
@@ -331,7 +331,7 @@ func Drag(listener func(*vecty.Event)) *vecty.EventListener {
 // a mouse button or hitting the escape key).
 //
 // https://developer.mozilla.org/docs/Web/Events/dragend
-func DragEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func DragEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "dragend", Listener: listener}
 }
 
@@ -339,7 +339,7 @@ func DragEnd(listener func(*vecty.Event)) *vecty.EventListener {
 // a valid drop target.
 //
 // https://developer.mozilla.org/docs/Web/Events/dragenter
-func DragEnter(listener func(*vecty.Event)) *vecty.EventListener {
+func DragEnter(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "dragenter", Listener: listener}
 }
 
@@ -347,7 +347,7 @@ func DragEnter(listener func(*vecty.Event)) *vecty.EventListener {
 // a valid drop target.
 //
 // https://developer.mozilla.org/docs/Web/Events/dragleave
-func DragLeave(listener func(*vecty.Event)) *vecty.EventListener {
+func DragLeave(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "dragleave", Listener: listener}
 }
 
@@ -355,7 +355,7 @@ func DragLeave(listener func(*vecty.Event)) *vecty.EventListener {
 // dragged over a valid drop target (every 350ms).
 //
 // https://developer.mozilla.org/docs/Web/Events/dragover
-func DragOver(listener func(*vecty.Event)) *vecty.EventListener {
+func DragOver(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "dragover", Listener: listener}
 }
 
@@ -363,14 +363,14 @@ func DragOver(listener func(*vecty.Event)) *vecty.EventListener {
 // selection.
 //
 // https://developer.mozilla.org/docs/Web/Events/dragstart
-func DragStart(listener func(*vecty.Event)) *vecty.EventListener {
+func DragStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "dragstart", Listener: listener}
 }
 
 // Drop is an event fired when an element is dropped on a valid drop target.
 //
 // https://developer.mozilla.org/docs/Web/Events/drop
-func Drop(listener func(*vecty.Event)) *vecty.EventListener {
+func Drop(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "drop", Listener: listener}
 }
 
@@ -378,7 +378,7 @@ func Drop(listener func(*vecty.Event)) *vecty.EventListener {
 // updated.
 //
 // https://developer.mozilla.org/docs/Web/Events/durationchange
-func DurationChange(listener func(*vecty.Event)) *vecty.EventListener {
+func DurationChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "durationchange", Listener: listener}
 }
 
@@ -387,21 +387,21 @@ func DurationChange(listener func(*vecty.Event)) *vecty.EventListener {
 // and the load() method is called to reload it.
 //
 // https://developer.mozilla.org/docs/Web/Events/emptied
-func Emptied(listener func(*vecty.Event)) *vecty.EventListener {
+func Emptied(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "emptied", Listener: listener}
 }
 
 // End is an event fired when the utterance has finished being spoken.
 //
 // https://developer.mozilla.org/docs/Web/Events/end_(SpeechSynthesis)
-func End(listener func(*vecty.Event)) *vecty.EventListener {
+func End(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "end", Listener: listener}
 }
 
 // EndEvent is an event fired when a SMIL animation element ends.
 //
 // https://developer.mozilla.org/docs/Web/Events/endEvent
-func EndEvent(listener func(*vecty.Event)) *vecty.EventListener {
+func EndEvent(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "endEvent", Listener: listener}
 }
 
@@ -409,7 +409,7 @@ func EndEvent(listener func(*vecty.Event)) *vecty.EventListener {
 // media was reached.
 //
 // https://developer.mozilla.org/docs/Web/Events/ended_(Web_Audio)
-func Ended(listener func(*vecty.Event)) *vecty.EventListener {
+func Ended(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "ended", Listener: listener}
 }
 
@@ -417,7 +417,7 @@ func Ended(listener func(*vecty.Event)) *vecty.EventListener {
 // from being successfully spoken.
 //
 // https://developer.mozilla.org/docs/Web/Events/error_(SpeechSynthesisError)
-func Error(listener func(*vecty.Event)) *vecty.EventListener {
+func Error(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "error", Listener: listener}
 }
 
@@ -425,7 +425,7 @@ func Error(listener func(*vecty.Event)) *vecty.EventListener {
 // bubble).
 //
 // https://developer.mozilla.org/docs/Web/Events/focus
-func Focus(listener func(*vecty.Event)) *vecty.EventListener {
+func Focus(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "focus", Listener: listener}
 }
 
@@ -433,14 +433,14 @@ func Focus(listener func(*vecty.Event)) *vecty.EventListener {
 // (bubbles).
 //
 // https://developer.mozilla.org/docs/Web/Events/focusin
-func FocusIn(listener func(*vecty.Event)) *vecty.EventListener {
+func FocusIn(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "focusin", Listener: listener}
 }
 
 // FocusOut is an event fired when an element is about to lose focus (bubbles).
 //
 // https://developer.mozilla.org/docs/Web/Events/focusout
-func FocusOut(listener func(*vecty.Event)) *vecty.EventListener {
+func FocusOut(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "focusout", Listener: listener}
 }
 
@@ -448,7 +448,7 @@ func FocusOut(listener func(*vecty.Event)) *vecty.EventListener {
 // mode or back to normal mode.
 //
 // https://developer.mozilla.org/docs/Web/Events/fullscreenchange
-func FullScreenChange(listener func(*vecty.Event)) *vecty.EventListener {
+func FullScreenChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "fullscreenchange", Listener: listener}
 }
 
@@ -456,28 +456,28 @@ func FullScreenChange(listener func(*vecty.Event)) *vecty.EventListener {
 // fullscreen mode for technical reasons or because the permission was denied.
 //
 // https://developer.mozilla.org/docs/Web/Events/fullscreenerror
-func FullScreenError(listener func(*vecty.Event)) *vecty.EventListener {
+func FullScreenError(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "fullscreenerror", Listener: listener}
 }
 
 // GamepadConnected is an event fired when a gamepad has been connected.
 //
 // https://developer.mozilla.org/docs/Web/Events/gamepadconnected
-func GamepadConnected(listener func(*vecty.Event)) *vecty.EventListener {
+func GamepadConnected(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "gamepadconnected", Listener: listener}
 }
 
 // GamepadDisconnected is an event fired when a gamepad has been disconnected.
 //
 // https://developer.mozilla.org/docs/Web/Events/gamepaddisconnected
-func GamepadDisconnected(listener func(*vecty.Event)) *vecty.EventListener {
+func GamepadDisconnected(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "gamepaddisconnected", Listener: listener}
 }
 
 // GotPointerCapture is an event fired when element receives pointer capture.
 //
 // https://developer.mozilla.org/docs/Web/Events/gotpointercapture
-func GotPointerCapture(listener func(*vecty.Event)) *vecty.EventListener {
+func GotPointerCapture(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "gotpointercapture", Listener: listener}
 }
 
@@ -485,7 +485,7 @@ func GotPointerCapture(listener func(*vecty.Event)) *vecty.EventListener {
 // changed (the part of the URL after the #).
 //
 // https://developer.mozilla.org/docs/Web/Events/hashchange
-func HashChange(listener func(*vecty.Event)) *vecty.EventListener {
+func HashChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "hashchange", Listener: listener}
 }
 
@@ -493,7 +493,7 @@ func HashChange(listener func(*vecty.Event)) *vecty.EventListener {
 // of an element with the attribute contenteditable is modified.
 //
 // https://developer.mozilla.org/docs/Web/Events/input
-func Input(listener func(*vecty.Event)) *vecty.EventListener {
+func Input(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "input", Listener: listener}
 }
 
@@ -501,14 +501,14 @@ func Input(listener func(*vecty.Event)) *vecty.EventListener {
 // doesn't satisfy its constraints.
 //
 // https://developer.mozilla.org/docs/Web/Events/invalid
-func Invalid(listener func(*vecty.Event)) *vecty.EventListener {
+func Invalid(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "invalid", Listener: listener}
 }
 
 // KeyDown is an event fired when a key is pressed down.
 //
 // https://developer.mozilla.org/docs/Web/Events/keydown
-func KeyDown(listener func(*vecty.Event)) *vecty.EventListener {
+func KeyDown(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "keydown", Listener: listener}
 }
 
@@ -516,14 +516,14 @@ func KeyDown(listener func(*vecty.Event)) *vecty.EventListener {
 // produces a character value (use input instead).
 //
 // https://developer.mozilla.org/docs/Web/Events/keypress
-func KeyPress(listener func(*vecty.Event)) *vecty.EventListener {
+func KeyPress(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "keypress", Listener: listener}
 }
 
 // KeyUp is an event fired when a key is released.
 //
 // https://developer.mozilla.org/docs/Web/Events/keyup
-func KeyUp(listener func(*vecty.Event)) *vecty.EventListener {
+func KeyUp(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "keyup", Listener: listener}
 }
 
@@ -531,21 +531,21 @@ func KeyUp(listener func(*vecty.Event)) *vecty.EventListener {
 // changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/languagechange
-func LanguageChange(listener func(*vecty.Event)) *vecty.EventListener {
+func LanguageChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "languagechange", Listener: listener}
 }
 
 // LevelChange is an event fired when the level attribute has been updated.
 //
 // https://developer.mozilla.org/docs/Web/Events/levelchange
-func LevelChange(listener func(*vecty.Event)) *vecty.EventListener {
+func LevelChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "levelchange", Listener: listener}
 }
 
 // Load is an event fired when progression has been successful.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/load_(ProgressEvent)
-func Load(listener func(*vecty.Event)) *vecty.EventListener {
+func Load(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "load", Listener: listener}
 }
 
@@ -553,14 +553,14 @@ func Load(listener func(*vecty.Event)) *vecty.EventListener {
 // or "load" have been dispatched).
 //
 // https://developer.mozilla.org/docs/Web/Events/loadend
-func LoadEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func LoadEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "loadend", Listener: listener}
 }
 
 // LoadStart is an event fired when progress has begun.
 //
 // https://developer.mozilla.org/docs/Web/Events/loadstart
-func LoadStart(listener func(*vecty.Event)) *vecty.EventListener {
+func LoadStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "loadstart", Listener: listener}
 }
 
@@ -568,21 +568,21 @@ func LoadStart(listener func(*vecty.Event)) *vecty.EventListener {
 // loading.
 //
 // https://developer.mozilla.org/docs/Web/Events/loadeddata
-func LoadedData(listener func(*vecty.Event)) *vecty.EventListener {
+func LoadedData(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "loadeddata", Listener: listener}
 }
 
 // LoadedMetadata is an event fired when the metadata has been loaded.
 //
 // https://developer.mozilla.org/docs/Web/Events/loadedmetadata
-func LoadedMetadata(listener func(*vecty.Event)) *vecty.EventListener {
+func LoadedMetadata(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "loadedmetadata", Listener: listener}
 }
 
 // LostPointerCapture is an event fired when element lost pointer capture.
 //
 // https://developer.mozilla.org/docs/Web/Events/lostpointercapture
-func LostPointerCapture(listener func(*vecty.Event)) *vecty.EventListener {
+func LostPointerCapture(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "lostpointercapture", Listener: listener}
 }
 
@@ -590,7 +590,7 @@ func LostPointerCapture(listener func(*vecty.Event)) *vecty.EventListener {
 // tag.
 //
 // https://developer.mozilla.org/docs/Web/Events/mark
-func Mark(listener func(*vecty.Event)) *vecty.EventListener {
+func Mark(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mark", Listener: listener}
 }
 
@@ -598,7 +598,7 @@ func Mark(listener func(*vecty.Event)) *vecty.EventListener {
 // or a message is received in a service worker from another context.
 //
 // https://developer.mozilla.org/docs/Web/Events/message_(ServiceWorker)
-func Message(listener func(*vecty.Event)) *vecty.EventListener {
+func Message(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "message", Listener: listener}
 }
 
@@ -606,7 +606,7 @@ func Message(listener func(*vecty.Event)) *vecty.EventListener {
 // is received by an object.
 //
 // https://developer.mozilla.org/docs/Web/Events/messageerror
-func MessageError(listener func(*vecty.Event)) *vecty.EventListener {
+func MessageError(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "messageerror", Listener: listener}
 }
 
@@ -614,7 +614,7 @@ func MessageError(listener func(*vecty.Event)) *vecty.EventListener {
 // is pressed on an element.
 //
 // https://developer.mozilla.org/docs/Web/Events/mousedown
-func MouseDown(listener func(*vecty.Event)) *vecty.EventListener {
+func MouseDown(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mousedown", Listener: listener}
 }
 
@@ -622,7 +622,7 @@ func MouseDown(listener func(*vecty.Event)) *vecty.EventListener {
 // element that has the listener attached.
 //
 // https://developer.mozilla.org/docs/Web/Events/mouseenter
-func MouseEnter(listener func(*vecty.Event)) *vecty.EventListener {
+func MouseEnter(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mouseenter", Listener: listener}
 }
 
@@ -630,14 +630,14 @@ func MouseEnter(listener func(*vecty.Event)) *vecty.EventListener {
 // that has the listener attached.
 //
 // https://developer.mozilla.org/docs/Web/Events/mouseleave
-func MouseLeave(listener func(*vecty.Event)) *vecty.EventListener {
+func MouseLeave(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mouseleave", Listener: listener}
 }
 
 // MouseMove is an event fired when a pointing device is moved over an element.
 //
 // https://developer.mozilla.org/docs/Web/Events/mousemove
-func MouseMove(listener func(*vecty.Event)) *vecty.EventListener {
+func MouseMove(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mousemove", Listener: listener}
 }
 
@@ -645,7 +645,7 @@ func MouseMove(listener func(*vecty.Event)) *vecty.EventListener {
 // that has the listener attached or off one of its children.
 //
 // https://developer.mozilla.org/docs/Web/Events/mouseout
-func MouseOut(listener func(*vecty.Event)) *vecty.EventListener {
+func MouseOut(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mouseout", Listener: listener}
 }
 
@@ -653,7 +653,7 @@ func MouseOut(listener func(*vecty.Event)) *vecty.EventListener {
 // that has the listener attached or onto one of its children.
 //
 // https://developer.mozilla.org/docs/Web/Events/mouseover
-func MouseOver(listener func(*vecty.Event)) *vecty.EventListener {
+func MouseOver(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mouseover", Listener: listener}
 }
 
@@ -661,7 +661,7 @@ func MouseOver(listener func(*vecty.Event)) *vecty.EventListener {
 // element.
 //
 // https://developer.mozilla.org/docs/Web/Events/mouseup
-func MouseUp(listener func(*vecty.Event)) *vecty.EventListener {
+func MouseUp(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "mouseup", Listener: listener}
 }
 
@@ -669,14 +669,14 @@ func MouseUp(listener func(*vecty.Event)) *vecty.EventListener {
 // final result with no significant recognition.
 //
 // https://developer.mozilla.org/docs/Web/Events/nomatch
-func NoMatch(listener func(*vecty.Event)) *vecty.EventListener {
+func NoMatch(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "nomatch", Listener: listener}
 }
 
 // NoUpdate is an event fired when the manifest hadn't changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/noupdate
-func NoUpdate(listener func(*vecty.Event)) *vecty.EventListener {
+func NoUpdate(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "noupdate", Listener: listener}
 }
 
@@ -684,7 +684,7 @@ func NoUpdate(listener func(*vecty.Event)) *vecty.EventListener {
 // ServiceWorkerRegistration.showNotification() has been clicked.
 //
 // https://developer.mozilla.org/docs/Web/Events/notificationclick
-func NotificationClick(listener func(*vecty.Event)) *vecty.EventListener {
+func NotificationClick(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "notificationclick", Listener: listener}
 }
 
@@ -692,14 +692,14 @@ func NotificationClick(listener func(*vecty.Event)) *vecty.EventListener {
 // or 410 page, so the application cache is being deleted.
 //
 // https://developer.mozilla.org/docs/Web/Events/obsolete
-func Obsolete(listener func(*vecty.Event)) *vecty.EventListener {
+func Obsolete(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "obsolete", Listener: listener}
 }
 
 // Offline is an event fired when the browser has lost access to the network.
 //
 // https://developer.mozilla.org/docs/Web/Events/offline
-func Offline(listener func(*vecty.Event)) *vecty.EventListener {
+func Offline(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "offline", Listener: listener}
 }
 
@@ -707,14 +707,14 @@ func Offline(listener func(*vecty.Event)) *vecty.EventListener {
 // (but particular websites might be unreachable).
 //
 // https://developer.mozilla.org/docs/Web/Events/online
-func Online(listener func(*vecty.Event)) *vecty.EventListener {
+func Online(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "online", Listener: listener}
 }
 
 // Open is an event fired when an event source connection has been established.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/open_serversentevents
-func Open(listener func(*vecty.Event)) *vecty.EventListener {
+func Open(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "open", Listener: listener}
 }
 
@@ -722,7 +722,7 @@ func Open(listener func(*vecty.Event)) *vecty.EventListener {
 // (portrait/landscape) has changed
 //
 // https://developer.mozilla.org/docs/Web/Events/orientationchange
-func OrientationChange(listener func(*vecty.Event)) *vecty.EventListener {
+func OrientationChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "orientationchange", Listener: listener}
 }
 
@@ -730,7 +730,7 @@ func OrientationChange(listener func(*vecty.Event)) *vecty.EventListener {
 // from.
 //
 // https://developer.mozilla.org/docs/Web/Events/pagehide
-func PageHide(listener func(*vecty.Event)) *vecty.EventListener {
+func PageHide(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pagehide", Listener: listener}
 }
 
@@ -738,7 +738,7 @@ func PageHide(listener func(*vecty.Event)) *vecty.EventListener {
 // to.
 //
 // https://developer.mozilla.org/docs/Web/Events/pageshow
-func PageShow(listener func(*vecty.Event)) *vecty.EventListener {
+func PageShow(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pageshow", Listener: listener}
 }
 
@@ -746,21 +746,21 @@ func PageShow(listener func(*vecty.Event)) *vecty.EventListener {
 // clipboard to the document.
 //
 // https://developer.mozilla.org/docs/Web/Events/paste
-func Paste(listener func(*vecty.Event)) *vecty.EventListener {
+func Paste(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "paste", Listener: listener}
 }
 
 // Pause is an event fired when the utterance is paused part way through.
 //
 // https://developer.mozilla.org/docs/Web/Events/pause_(SpeechSynthesis)
-func Pause(listener func(*vecty.Event)) *vecty.EventListener {
+func Pause(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pause", Listener: listener}
 }
 
 // Play is an event fired when playback has begun.
 //
 // https://developer.mozilla.org/docs/Web/Events/play
-func Play(listener func(*vecty.Event)) *vecty.EventListener {
+func Play(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "play", Listener: listener}
 }
 
@@ -768,7 +768,7 @@ func Play(listener func(*vecty.Event)) *vecty.EventListener {
 // paused or delayed due to lack of data.
 //
 // https://developer.mozilla.org/docs/Web/Events/playing
-func Playing(listener func(*vecty.Event)) *vecty.EventListener {
+func Playing(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "playing", Listener: listener}
 }
 
@@ -776,7 +776,7 @@ func Playing(listener func(*vecty.Event)) *vecty.EventListener {
 // more events.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointercancel
-func PointerCancel(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerCancel(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointercancel", Listener: listener}
 }
 
@@ -784,7 +784,7 @@ func PointerCancel(listener func(*vecty.Event)) *vecty.EventListener {
 // state.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerdown
-func PointerDown(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerDown(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerdown", Listener: listener}
 }
 
@@ -792,7 +792,7 @@ func PointerDown(listener func(*vecty.Event)) *vecty.EventListener {
 // hit-testing boundary.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerenter
-func PointerEnter(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerEnter(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerenter", Listener: listener}
 }
 
@@ -800,14 +800,14 @@ func PointerEnter(listener func(*vecty.Event)) *vecty.EventListener {
 // hit-testing boundary.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerleave
-func PointerLeave(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerLeave(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerleave", Listener: listener}
 }
 
 // PointerLockChange is an event fired when the pointer was locked or released.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerlockchange
-func PointerLockChange(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerLockChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerlockchange", Listener: listener}
 }
 
@@ -815,14 +815,14 @@ func PointerLockChange(listener func(*vecty.Event)) *vecty.EventListener {
 // pointer for technical reasons or because the permission was denied.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerlockerror
-func PointerLockError(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerLockError(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerlockerror", Listener: listener}
 }
 
 // PointerMove is an event fired when the pointer changed coordinates.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointermove
-func PointerMove(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerMove(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointermove", Listener: listener}
 }
 
@@ -830,7 +830,7 @@ func PointerMove(listener func(*vecty.Event)) *vecty.EventListener {
 // hit-testing boundary or leaves detectable hover range.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerout
-func PointerOut(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerOut(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerout", Listener: listener}
 }
 
@@ -838,7 +838,7 @@ func PointerOut(listener func(*vecty.Event)) *vecty.EventListener {
 // hit-testing boundary.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerover
-func PointerOver(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerOver(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerover", Listener: listener}
 }
 
@@ -846,7 +846,7 @@ func PointerOver(listener func(*vecty.Event)) *vecty.EventListener {
 // state.
 //
 // https://developer.mozilla.org/docs/Web/Events/pointerup
-func PointerUp(listener func(*vecty.Event)) *vecty.EventListener {
+func PointerUp(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pointerup", Listener: listener}
 }
 
@@ -854,7 +854,7 @@ func PointerUp(listener func(*vecty.Event)) *vecty.EventListener {
 // to (in certain cases).
 //
 // https://developer.mozilla.org/docs/Web/Events/popstate
-func PopState(listener func(*vecty.Event)) *vecty.EventListener {
+func PopState(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "popstate", Listener: listener}
 }
 
@@ -862,14 +862,14 @@ func PopState(listener func(*vecty.Event)) *vecty.EventListener {
 // listed by the manifest.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/progress_(appcache_event)
-func Progress(listener func(*vecty.Event)) *vecty.EventListener {
+func Progress(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "progress", Listener: listener}
 }
 
 // Push is an event fired when a Service Worker has received a push message.
 //
 // https://developer.mozilla.org/docs/Web/Events/push
-func Push(listener func(*vecty.Event)) *vecty.EventListener {
+func Push(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "push", Listener: listener}
 }
 
@@ -877,14 +877,14 @@ func Push(listener func(*vecty.Event)) *vecty.EventListener {
 // expired.
 //
 // https://developer.mozilla.org/docs/Web/Events/pushsubscriptionchange
-func PushSubscriptionChange(listener func(*vecty.Event)) *vecty.EventListener {
+func PushSubscriptionChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "pushsubscriptionchange", Listener: listener}
 }
 
 // RateChange is an event fired when the playback rate has changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/ratechange
-func RateChange(listener func(*vecty.Event)) *vecty.EventListener {
+func RateChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "ratechange", Listener: listener}
 }
 
@@ -892,28 +892,28 @@ func RateChange(listener func(*vecty.Event)) *vecty.EventListener {
 // document has changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/readystatechange
-func ReadyStateChange(listener func(*vecty.Event)) *vecty.EventListener {
+func ReadyStateChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "readystatechange", Listener: listener}
 }
 
 // RepeatEvent is an event fired when a SMIL animation element is repeated.
 //
 // https://developer.mozilla.org/docs/Web/Events/repeatEvent
-func RepeatEvent(listener func(*vecty.Event)) *vecty.EventListener {
+func RepeatEvent(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "repeatEvent", Listener: listener}
 }
 
 // Reset is an event fired when a form is reset.
 //
 // https://developer.mozilla.org/docs/Web/Events/reset
-func Reset(listener func(*vecty.Event)) *vecty.EventListener {
+func Reset(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "reset", Listener: listener}
 }
 
 // Resize is an event fired when the document view has been resized.
 //
 // https://developer.mozilla.org/docs/Web/Events/resize
-func Resize(listener func(*vecty.Event)) *vecty.EventListener {
+func Resize(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "resize", Listener: listener}
 }
 
@@ -921,7 +921,7 @@ func Resize(listener func(*vecty.Event)) *vecty.EventListener {
 // timing buffer is full.
 //
 // https://developer.mozilla.org/docs/Web/Events/resourcetimingbufferfull
-func ResourceTimingBufferFull(listener func(*vecty.Event)) *vecty.EventListener {
+func ResourceTimingBufferFull(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "resourcetimingbufferfull", Listener: listener}
 }
 
@@ -930,14 +930,14 @@ func ResourceTimingBufferFull(listener func(*vecty.Event)) *vecty.EventListener 
 // communicated back to the app.
 //
 // https://developer.mozilla.org/docs/Web/Events/result
-func Result(listener func(*vecty.Event)) *vecty.EventListener {
+func Result(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "result", Listener: listener}
 }
 
 // Resume is an event fired when a paused utterance is resumed.
 //
 // https://developer.mozilla.org/docs/Web/Events/resume
-func Resume(listener func(*vecty.Event)) *vecty.EventListener {
+func Resume(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "resume", Listener: listener}
 }
 
@@ -945,7 +945,7 @@ func Resume(listener func(*vecty.Event)) *vecty.EventListener {
 // was loaded.
 //
 // https://developer.mozilla.org/docs/Web/Events/SVGAbort
-func SVGAbort(listener func(*vecty.Event)) *vecty.EventListener {
+func SVGAbort(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "SVGAbort", Listener: listener}
 }
 
@@ -953,28 +953,28 @@ func SVGAbort(listener func(*vecty.Event)) *vecty.EventListener {
 // loaded.
 //
 // https://developer.mozilla.org/docs/Web/Events/SVGError
-func SVGError(listener func(*vecty.Event)) *vecty.EventListener {
+func SVGError(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "SVGError", Listener: listener}
 }
 
 // SVGLoad is an event fired when an SVG document has been loaded and parsed.
 //
 // https://developer.mozilla.org/docs/Web/Events/SVGLoad
-func SVGLoad(listener func(*vecty.Event)) *vecty.EventListener {
+func SVGLoad(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "SVGLoad", Listener: listener}
 }
 
 // SVGResize is an event fired when an SVG document is being resized.
 //
 // https://developer.mozilla.org/docs/Web/Events/SVGResize
-func SVGResize(listener func(*vecty.Event)) *vecty.EventListener {
+func SVGResize(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "SVGResize", Listener: listener}
 }
 
 // SVGScroll is an event fired when an SVG document is being scrolled.
 //
 // https://developer.mozilla.org/docs/Web/Events/SVGScroll
-func SVGScroll(listener func(*vecty.Event)) *vecty.EventListener {
+func SVGScroll(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "SVGScroll", Listener: listener}
 }
 
@@ -982,14 +982,14 @@ func SVGScroll(listener func(*vecty.Event)) *vecty.EventListener {
 // window or frame.
 //
 // https://developer.mozilla.org/docs/Web/Events/SVGUnload
-func SVGUnload(listener func(*vecty.Event)) *vecty.EventListener {
+func SVGUnload(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "SVGUnload", Listener: listener}
 }
 
 // SVGZoom is an event fired when an SVG document is being zoomed.
 //
 // https://developer.mozilla.org/docs/Web/Events/SVGZoom
-func SVGZoom(listener func(*vecty.Event)) *vecty.EventListener {
+func SVGZoom(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "SVGZoom", Listener: listener}
 }
 
@@ -997,35 +997,35 @@ func SVGZoom(listener func(*vecty.Event)) *vecty.EventListener {
 // scrolled.
 //
 // https://developer.mozilla.org/docs/Web/Events/scroll
-func Scroll(listener func(*vecty.Event)) *vecty.EventListener {
+func Scroll(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "scroll", Listener: listener}
 }
 
 // Seeked is an event fired when a seek operation completed.
 //
 // https://developer.mozilla.org/docs/Web/Events/seeked
-func Seeked(listener func(*vecty.Event)) *vecty.EventListener {
+func Seeked(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "seeked", Listener: listener}
 }
 
 // Seeking is an event fired when a seek operation began.
 //
 // https://developer.mozilla.org/docs/Web/Events/seeking
-func Seeking(listener func(*vecty.Event)) *vecty.EventListener {
+func Seeking(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "seeking", Listener: listener}
 }
 
 // Select is an event fired when some text is being selected.
 //
 // https://developer.mozilla.org/docs/Web/Events/select
-func Select(listener func(*vecty.Event)) *vecty.EventListener {
+func Select(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "select", Listener: listener}
 }
 
 // SelectStart is an event fired when a selection just started.
 //
 // https://developer.mozilla.org/docs/Web/Events/selectstart
-func SelectStart(listener func(*vecty.Event)) *vecty.EventListener {
+func SelectStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "selectstart", Listener: listener}
 }
 
@@ -1033,7 +1033,7 @@ func SelectStart(listener func(*vecty.Event)) *vecty.EventListener {
 // been changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/selectionchange
-func SelectionChange(listener func(*vecty.Event)) *vecty.EventListener {
+func SelectionChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "selectionchange", Listener: listener}
 }
 
@@ -1041,7 +1041,7 @@ func SelectionChange(listener func(*vecty.Event)) *vecty.EventListener {
 // element that has a contextmenu attribute
 //
 // https://developer.mozilla.org/docs/Web/Events/show
-func Show(listener func(*vecty.Event)) *vecty.EventListener {
+func Show(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "show", Listener: listener}
 }
 
@@ -1049,7 +1049,7 @@ func Show(listener func(*vecty.Event)) *vecty.EventListener {
 // (<slot>) have changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/slotchange
-func SlotChange(listener func(*vecty.Event)) *vecty.EventListener {
+func SlotChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "slotchange", Listener: listener}
 }
 
@@ -1057,7 +1057,7 @@ func SlotChange(listener func(*vecty.Event)) *vecty.EventListener {
 // has stopped being detected.
 //
 // https://developer.mozilla.org/docs/Web/Events/soundend
-func SoundEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func SoundEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "soundend", Listener: listener}
 }
 
@@ -1065,7 +1065,7 @@ func SoundEnd(listener func(*vecty.Event)) *vecty.EventListener {
 // — has been detected.
 //
 // https://developer.mozilla.org/docs/Web/Events/soundstart
-func SoundStart(listener func(*vecty.Event)) *vecty.EventListener {
+func SoundStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "soundstart", Listener: listener}
 }
 
@@ -1073,7 +1073,7 @@ func SoundStart(listener func(*vecty.Event)) *vecty.EventListener {
 // service has stopped being detected.
 //
 // https://developer.mozilla.org/docs/Web/Events/speechend
-func SpeechEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func SpeechEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "speechend", Listener: listener}
 }
 
@@ -1081,7 +1081,7 @@ func SpeechEnd(listener func(*vecty.Event)) *vecty.EventListener {
 // recognition service as speech has been detected.
 //
 // https://developer.mozilla.org/docs/Web/Events/speechstart
-func SpeechStart(listener func(*vecty.Event)) *vecty.EventListener {
+func SpeechStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "speechstart", Listener: listener}
 }
 
@@ -1089,14 +1089,14 @@ func SpeechStart(listener func(*vecty.Event)) *vecty.EventListener {
 // but data is unexpectedly not forthcoming.
 //
 // https://developer.mozilla.org/docs/Web/Events/stalled
-func Stalled(listener func(*vecty.Event)) *vecty.EventListener {
+func Stalled(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "stalled", Listener: listener}
 }
 
 // Start is an event fired when the utterance has begun to be spoken.
 //
 // https://developer.mozilla.org/docs/Web/Events/start_(SpeechSynthesis)
-func Start(listener func(*vecty.Event)) *vecty.EventListener {
+func Start(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "start", Listener: listener}
 }
 
@@ -1104,28 +1104,28 @@ func Start(listener func(*vecty.Event)) *vecty.EventListener {
 // sessionStorage) has changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/storage
-func Storage(listener func(*vecty.Event)) *vecty.EventListener {
+func Storage(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "storage", Listener: listener}
 }
 
 // Submit is an event fired when a form is submitted.
 //
 // https://developer.mozilla.org/docs/Web/Events/submit
-func Submit(listener func(*vecty.Event)) *vecty.EventListener {
+func Submit(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "submit", Listener: listener}
 }
 
 // Success is an event fired when a request successfully completed.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/success_indexedDB
-func Success(listener func(*vecty.Event)) *vecty.EventListener {
+func Success(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "success", Listener: listener}
 }
 
 // Suspend is an event fired when media data loading has been suspended.
 //
 // https://developer.mozilla.org/docs/Web/Events/suspend
-func Suspend(listener func(*vecty.Event)) *vecty.EventListener {
+func Suspend(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "suspend", Listener: listener}
 }
 
@@ -1133,14 +1133,14 @@ func Suspend(listener func(*vecty.Event)) *vecty.EventListener {
 // attribute has been updated.
 //
 // https://developer.mozilla.org/docs/Web/Events/timeupdate
-func TimeUpdate(listener func(*vecty.Event)) *vecty.EventListener {
+func TimeUpdate(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "timeupdate", Listener: listener}
 }
 
 // Timeout event is fired when Progression is terminated due to preset time expiring.
 //
 // https://developer.mozilla.org/docs/Web/Events/timeout
-func Timeout(listener func(*vecty.Event)) *vecty.EventListener {
+func Timeout(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "timeout", Listener: listener}
 }
 
@@ -1148,7 +1148,7 @@ func Timeout(listener func(*vecty.Event)) *vecty.EventListener {
 // implementation-specific manners (too many touch points for example).
 //
 // https://developer.mozilla.org/docs/Web/Events/touchcancel
-func TouchCancel(listener func(*vecty.Event)) *vecty.EventListener {
+func TouchCancel(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "touchcancel", Listener: listener}
 }
 
@@ -1156,7 +1156,7 @@ func TouchCancel(listener func(*vecty.Event)) *vecty.EventListener {
 // surface.
 //
 // https://developer.mozilla.org/docs/Web/Events/touchend
-func TouchEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func TouchEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "touchend", Listener: listener}
 }
 
@@ -1164,7 +1164,7 @@ func TouchEnd(listener func(*vecty.Event)) *vecty.EventListener {
 // surface.
 //
 // https://developer.mozilla.org/docs/Web/Events/touchmove
-func TouchMove(listener func(*vecty.Event)) *vecty.EventListener {
+func TouchMove(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "touchmove", Listener: listener}
 }
 
@@ -1172,14 +1172,14 @@ func TouchMove(listener func(*vecty.Event)) *vecty.EventListener {
 // surface.
 //
 // https://developer.mozilla.org/docs/Web/Events/touchstart
-func TouchStart(listener func(*vecty.Event)) *vecty.EventListener {
+func TouchStart(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "touchstart", Listener: listener}
 }
 
 // TransitionEnd is an event fired when a CSS transition has completed.
 //
 // https://developer.mozilla.org/docs/Web/Events/transitionend
-func TransitionEnd(listener func(*vecty.Event)) *vecty.EventListener {
+func TransitionEnd(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "transitionend", Listener: listener}
 }
 
@@ -1187,7 +1187,7 @@ func TransitionEnd(listener func(*vecty.Event)) *vecty.EventListener {
 // unloaded.
 //
 // https://developer.mozilla.org/docs/Web/Events/unload
-func Unload(listener func(*vecty.Event)) *vecty.EventListener {
+func Unload(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "unload", Listener: listener}
 }
 
@@ -1196,7 +1196,7 @@ func Unload(listener func(*vecty.Event)) *vecty.EventListener {
 // new cache.
 //
 // https://developer.mozilla.org/docs/Web/Events/updateready
-func UpdateReady(listener func(*vecty.Event)) *vecty.EventListener {
+func UpdateReady(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "updateready", Listener: listener}
 }
 
@@ -1205,7 +1205,7 @@ func UpdateReady(listener func(*vecty.Event)) *vecty.EventListener {
 // transaction has been created.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/upgradeneeded_indexedDB
-func UpgradeNeeded(listener func(*vecty.Event)) *vecty.EventListener {
+func UpgradeNeeded(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "upgradeneeded", Listener: listener}
 }
 
@@ -1214,14 +1214,14 @@ func UpgradeNeeded(listener func(*vecty.Event)) *vecty.EventListener {
 // not).
 //
 // https://developer.mozilla.org/docs/Web/Events/userproximity
-func UserProximity(listener func(*vecty.Event)) *vecty.EventListener {
+func UserProximity(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "userproximity", Listener: listener}
 }
 
 // VersionChange is an event fired when a versionchange transaction completed.
 //
 // https://developer.mozilla.org/docs/Web/Reference/Events/versionchange_indexedDB
-func VersionChange(listener func(*vecty.Event)) *vecty.EventListener {
+func VersionChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "versionchange", Listener: listener}
 }
 
@@ -1229,7 +1229,7 @@ func VersionChange(listener func(*vecty.Event)) *vecty.EventListener {
 // visible or has been hidden.
 //
 // https://developer.mozilla.org/docs/Web/Events/visibilitychange
-func VisibilityChange(listener func(*vecty.Event)) *vecty.EventListener {
+func VisibilityChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "visibilitychange", Listener: listener}
 }
 
@@ -1238,14 +1238,14 @@ func VisibilityChange(listener func(*vecty.Event)) *vecty.EventListener {
 // changed (when the voiceschanged event fires.)
 //
 // https://developer.mozilla.org/docs/Web/Events/voiceschanged
-func VoicesChanged(listener func(*vecty.Event)) *vecty.EventListener {
+func VoicesChanged(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "voiceschanged", Listener: listener}
 }
 
 // VolumeChange is an event fired when the volume has changed.
 //
 // https://developer.mozilla.org/docs/Web/Events/volumechange
-func VolumeChange(listener func(*vecty.Event)) *vecty.EventListener {
+func VolumeChange(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "volumechange", Listener: listener}
 }
 
@@ -1253,7 +1253,7 @@ func VolumeChange(listener func(*vecty.Event)) *vecty.EventListener {
 // lack of data.
 //
 // https://developer.mozilla.org/docs/Web/Events/waiting
-func Waiting(listener func(*vecty.Event)) *vecty.EventListener {
+func Waiting(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "waiting", Listener: listener}
 }
 
@@ -1261,6 +1261,6 @@ func Waiting(listener func(*vecty.Event)) *vecty.EventListener {
 // in any direction.
 //
 // https://developer.mozilla.org/docs/Web/Events/wheel
-func Wheel(listener func(*vecty.Event)) *vecty.EventListener {
+func Wheel(listener func(vecty.Event)) *vecty.EventListener {
 	return &vecty.EventListener{Name: "wheel", Listener: listener}
 }

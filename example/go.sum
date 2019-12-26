@@ -9,8 +9,12 @@ github.com/microcosm-cc/bluemonday v1.0.2 h1:5lPfLTTAvAbtS0VqT+94yOtFnGfUWYyx0+i
 github.com/microcosm-cc/bluemonday v1.0.2/go.mod h1:iVP4YcDBq+n/5fb23BhYFvIMq/leAFZyRl6bYmGDlGc=
 github.com/pubgo/godom v0.0.4 h1:q7Re1hcFAly79yR0As/F57jFKWg6O90IkCf1FRFzKe0=
 github.com/pubgo/godom v0.0.4/go.mod h1:PEptMNLx/zklT6/kTVtpf01JTlVvPQzkJdYlfe+aCnI=
+github.com/pubgo/godom v0.0.5 h1:JD0wIL0D+YtH5+wdilF3g9vZL0/+dB8QDE30QxFS+Cc=
+github.com/pubgo/godom v0.0.5/go.mod h1:PEptMNLx/zklT6/kTVtpf01JTlVvPQzkJdYlfe+aCnI=
 github.com/pubgo/vecty v0.0.0-20191219183851-cafd70738c00 h1:/sL8GIiJIRCGXRa+gk2EGQQfl8IHoTQqioHnGWjmiVU=
 github.com/pubgo/vecty v0.0.0-20191219183851-cafd70738c00/go.mod h1:G1xtplIAQ+AhW9evOz/YEk6Qq1uoVnxTI3T7r/1Wpz8=
+github.com/pubgo/vecty v0.0.1 h1:VoWrIL1LzuUHDWaXxEzF/vE8YN/sg93/MQlc9wHSRFc=
+github.com/pubgo/vecty v0.0.1/go.mod h1:yI1RGLEQ5vDCPN5ws++0Qf3VPhMsrdOfsa30a+4oPuQ=
 github.com/shurcooL/sanitized_anchor_name v1.0.0 h1:PdmoCO6wvbs+7yrJyMORt4/BmY5IYyJwS/kOiWx8mHo=
 github.com/shurcooL/sanitized_anchor_name v1.0.0/go.mod h1:1NzhyTcUVG4SuEtjjoZeVRXNmyL/1OwPU0+IJeTBvfc=
 github.com/slimsag/blackfriday v2.0.0+incompatible h1:3mjnT4p/+Ow8j8/T6H01S5pxXNPhVuOBzxmAbsszxi4=

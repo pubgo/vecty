@@ -2,7 +2,11 @@
 
 package vecty
 
-import "github.com/pubgo/godom"
+import (
+	"fmt"
+	"github.com/pubgo/godom"
+	"github.com/pubgo/godom/version"
+)
 
 var (
 	global    = godom.Global()
@@ -20,3 +24,7 @@ var wrapEvent = godom.WrapEvent
 
 type Event = godom.Event
 type BasicEvent = godom.BasicEvent
+
+func init() {
+	fmt.Printf("vecty Version %s, BuildV %s, CommitV %s\n", version.Version, version.BuildV, version.CommitV)
+}
